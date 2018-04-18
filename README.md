@@ -103,13 +103,14 @@ decipher('elloh') // Should return 'hello'
 Users start with an array of animal noises and a function ```animalFinder(noise)``` that returns the animal corresponding to each noice. The challenge is to create a function that takes an array of animal noises and returns an array of the animals that make those noises. This will increase familiarity with loops, iterating over arrays, as well as introduce the concept of callbacks (shown afterwards as part of the "optimal" solution). This can also be an opportunity to introduce another popular built-in method: ```Array.map()```
 
 ```javascript
-var animalFarm = ['moo','cluck','oink','oink,'moo','moo']
+var animalFarm = ['moo','cluck','oink','oink','moo','moo']
 
 function animalFinder(noise) { 
-	animalNoises = { 'moo':'cow', 'cluck':'chicken', 'oink':'pig'} // This is a Hash, or Object
-    return animalNoises[noise]; // Given a noise, will try to find its matching value within animalNoises
-    // Don't worry if this doesn't make too much sense yet
+  	// This is a Hash, or Object 
+	animalNoises = { 'moo':'cow', 'cluck':'chicken', 'oink':'pig'} // Don't worry if this doesn't make too much sense yet
+  	return animalNoises[noise]; // Given a noise, will try to find its matching value within animalNoises
 }
+
 animalFinder('moo') // Returns 'cow'
 animalFinder('cluck') // Returns 'chicken'
 
